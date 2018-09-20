@@ -16,7 +16,7 @@ elseif (NOT RabbitMQ_FOUND)
 
     include(FindPackageHandleStandardArgs)
     FIND_PACKAGE_HANDLE_STANDARD_ARGS(RabbitMQ RabbitMQ_INCLUDE_DIR RabbitMQ_LIBRARY)
-    if (LOG4CXX_FOUND)
+    if (RABBITMQ_FOUND)
         set(RabbitMQ_FOUND TRUE)
     endif ()
 endif ()
